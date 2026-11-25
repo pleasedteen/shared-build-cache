@@ -1,0 +1,7 @@
+{
+  "name": "sample-app",
+  "target": "linux-x64",
+  "optimization": "release",
+  "objects": ["obj/main.o", "obj/render.o"],
+  "symbols": "symbols/app.dbg"
+}

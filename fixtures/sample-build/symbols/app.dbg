@@ -1,0 +1,4 @@
+DWARF-like deterministic debug fixture.
+Function: main
+Line table: src/main.c:1
+This file exists to exercise nested paths and checksum verification.

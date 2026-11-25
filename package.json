@@ -1,0 +1,27 @@
+{
+  "name": "shared-build-cache",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared local, content-addressed build artifact cache with SQLite metadata, pinned fetch sessions, quota eviction, and crash recovery.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types --experimental-sqlite --no-warnings src/server.ts",
+    "cli": "node --experimental-strip-types --experimental-sqlite --no-warnings src/cli.ts",
+    "test": "node --experimental-strip-types --experimental-sqlite --no-warnings test/run-all.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "build-cache",
+    "sqlite",
+    "content-addressed",
+    "artifact-cache"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
